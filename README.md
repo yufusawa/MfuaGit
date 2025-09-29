@@ -1,7 +1,7 @@
-### Лекции
+## Лекции
 
-[Средства разработки технической документации](/content/SupportAndtesting_of_software_modules/Documentation.md)
+[Поддержка и тестирование программных модулей](/content/SupportAndtesting_of_software_modules/README.md)
 
-[Единая система программной документации (ЕСПД)](/content/SupportAndtesting_of_software_modules/ESPD.md)
+[Основы проектирования баз данных]()
 
-[Автоматизация документирования кода](/content/SupportAndtesting_of_software_modules/AutoDocumentation.md)
+[Обеспечение качества функционирования компьютерных систем]()
