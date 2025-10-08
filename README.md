@@ -3,7 +3,7 @@
 Минимальные требования к студентам
 
 1. Персональный компьютер
-1. Git (Git-Bash) 
+1. Git (Git-Bash)
 1. Регистрация в Яндекса или VK
 1. Сервис [gitflic.ru](gitflic.ru)
 1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru)
@@ -14,9 +14,10 @@
 1. WSL 2.0 - установит Ubuntu - для БД
 1. Virtual Box - для установки Alt Образование 11 - для контроллера домена (групповые политики)
 
+
 ### WSL 2.0
 
-1. В BIOS VTx или AMD-V - enable (Advanced configuration CPU) 
+1. В BIOS VTx или AMD-V - enable (Advanced configuration CPU)
 
 1. Для Windows: WSL 2.0 (для работы с БД) и Virtual Box (Для организации контроллера домена)
 
