@@ -2,7 +2,7 @@
 
 Минимальные требования к студентам
 
-1. Персональный компьютер
+1. Персональный компьютер и аудиогарнитура
 1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/)
 1. Регистрация в Яндекса или VK
 1. Сервис [gitflic.ru](gitflic.ru)
@@ -15,14 +15,45 @@
 1. **Virtual Box** - для установки **Alt Образование 11** - для контроллера домена (групповые политики)
 [Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
 
+### WSL 2.0 для Windows 10 (для работы с БД)
 
-### WSL 2.0
+Проверить поддержку CPU виртуализации
 
-1. В BIOS VTx или AMD-V - enable (Advanced configuration CPU)
+1. В BIOS **VTx** или **AMD-V** - `enable` (Advanced configuration CPU)
 
-1. Для Windows: WSL 2.0 (для работы с БД) и Virtual Box (Для организации контроллера домена)
+#### Основные этапы настройки и устновки WSL 2.0
+
+1. Включение дополнения "Подсистема Windows для Linux"
+    - Выполнить **Win + R**, в диалоговом окне ввести `appwiz.cpl` и нажать **Enter**.
+    - Программы и компоненты -> Включение и отключение дополнительных компонентов Windows -> поставить флажок в *Подсистема Windows для Linux*
+    - Перезагрузить компьютер
+    - Запустить **Windows PowerShell** (Администратор)
+    - Проверка подсистемы WSL 2.0 командой `wsl --version`
+    - Обновить WSL 2.0 командой `wsl --update`
+    - Установить WSL 2.0 `wsl --install`
+    - Когда система предложит указать имя пользователя UNIX, надо указать `user` и Enter
+    - Пароль польователя `user` - `123` (при наборе пароля он никак не отображается, но всё равно набирается) и **Enter**. Повтори пароль и **Enter**
+    - Перезагрузить компьютер
+    - После перезагрузки найти **Ubuntu** можно из **Главного меню** и запустить её как обычное приложение **Windows**
+    - Обновить Ubuntu: в терминале Ubuntu запустить команду `sudo apt list --upgradable -a && sudo apt update && sudo apt full-upgrade -y`
+    - Установить дополнительные утилиты в Ubuntu: в терминале Ubuntu запустить команду `sudo apt update && sudo apt install -y mc htop tree whois sl neofetch wget curl inxi ncdu micro xclip xsel cmatrix`
+    - Установить поддержку g++ и clang++ в терминале Ubuntu: `sudo apt update && sudo apt install -y build-essential git gdb ascii clang mingw-w64`
+    - Проверить работу Ubuntu командами:
+        - `uname -a` - краткая информация о системе
+        - `neofetch` - красивая информация о системе
+        - `htop` - процессы в режиме реального времени. Выйти по **Q** или **Ctrl+C**
+        - `sl`
+        - `ascii -d`
+        - `inxi -F`
+    - (Не обязательно!)Если обновления Ubuntu завершаться ошибкой, то надо в **Windows PowerShell** (Администратор) задать версию WSL 2 по умолчанию: `wsl --set-default-version 2`
 
 [Основные команды для WSL](https://learn.microsoft.com/ru-ru/windows/wsl/basic-commands)
+
+### Virtual Box (Для организации контроллера домена)
+
+[Загрузить и установить Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
+
+[Загрузить Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso)
 
 ### Рекомендуемые навыки и умения
 
