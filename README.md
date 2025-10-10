@@ -66,15 +66,24 @@
 
 #### 1. Запуск Git на персональном компьютере
 
+Проверить утановку Git в Powershell
+```shell
+git --version
+```
+
 Команды представления системе Git
 
 ```shell
 git config --global user.name "Rurewa"
 ```
 
+> где вместо **Rurewa** - ваш username
+
 ```shell
 git config --global user.email "rurewa@mail.ru"
 ```
+
+> где вместо `rurewa@mail.ru` - ваша почта
 
 #### 2. Клонировать удалённый репозиторий на свой компьютер
 
@@ -84,12 +93,7 @@ git clone https://gitflic.ru/project/kizdano/1234.git
 
 #### 3. Открыть папку склонированного репозитория
 
-Представиться системе **Git** - однократно
-
-```git config --global user.email "your@mail.com"``` - почта коммитера
-```git config --global user.name "your name"``` - имя коммитера
-
-#### 4. Проверить статус текущего репозитория
+Проверить статус текущего репозитория
 
 ```shell
 git status
