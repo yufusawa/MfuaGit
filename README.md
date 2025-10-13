@@ -1,19 +1,24 @@
 # Конспект занятий
 
+```
+> Со студентами составить навигацию по этому репозиторию средствами Markwodn!
+```
+
 Минимальные требования к студентам
 
 1. Персональный компьютер и аудиогарнитура
 1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/)
 1. Регистрация в Яндекса или VK
-1. Сервис [gitflic.ru](gitflic.ru)
+1. Сервис [gitflic.ru](gitflic.ru) и [Github](github.com)
 1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru)
 1. **Dia** [Dia](https://ru.wikipedia.org/wiki/Dia)
 1. **VSCode** [VSCode](https://code.visualstudio.com/)
 1. **Termux** (для Андроид) [Termux](https://termux.dev/en/)
 1. Компилятор **gcc** (Для Windows MinGW) [MinGW](https://www.mingw-w64.org/downloads/)
-1. **WSL 2.0** - установит Ubuntu - для БД [WSL 2.0](https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2Fwsl2.md&commit=f9dc07eb6d93862b751d82c6806a1f860043b785&mode=markdown)
+1. **WSL 2.0** - установить Ubuntu - для БД [WSL 2.0](https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2Fwsl2.md&commit=f9dc07eb6d93862b751d82c6806a1f860043b785&mode=markdown)
 1. **Virtual Box** - для установки **Alt Образование 11** - для контроллера домена (групповые политики)
 [Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
+[Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso)
 
 ### WSL 2.0 для Windows 10 (для работы с БД)
 
