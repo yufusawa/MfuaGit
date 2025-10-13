@@ -60,6 +60,26 @@
 
 [Загрузить Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso)
 
+
+### Настройки VSCode
+
+- Включить машстабирование по Ctrl+WheelMouse
+    - Settings -> Zoom -> Mouse Wheel Zoom
+- Отключить Миникарту в редакторе
+    - Settings -> Editor -› Minimap:
+
+Установка расширений
+
+- LiveServer (FiveServer)
+    - [LiveServer](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
+- CodeSnap
+    - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
+- Trailing Spaces
+    - [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
+
+Открыть и закрыть встроенный терминал по **Ctrl+~**
+
+
 ### Рекомендуемые навыки и умения
 
 1. "Слепая печать" на стандартной клавиатуре
