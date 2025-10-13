@@ -54,6 +54,13 @@
 
 [Основные команды для WSL](https://learn.microsoft.com/ru-ru/windows/wsl/basic-commands)
 
+### Docker
+
+1. [Загрузить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
+1. Перезагрузить компьютер
+1. В Powershell выполнить ```docker images``` для показа установленных образов
+1. Установить тестовый контейнер ```docker run hello-world```
+
 ### Virtual Box (Для организации контроллера домена)
 
 [Загрузить и установить Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
