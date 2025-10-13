@@ -119,7 +119,6 @@ git add .
 
 #### 8. Закоммитить
 
-
 ```shell
 git commit -m "Some message"
 ```
@@ -128,6 +127,12 @@ git commit -m "Some message"
 
 ```shell
 git push
+```
+
+или, если не получилось с 1-го раза запушить, то:
+
+```shell
+git push -u origin master
 ```
 
 #### 10. Проверить изменения на сайте удалённого репозитория
