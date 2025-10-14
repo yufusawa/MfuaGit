@@ -58,8 +58,9 @@
 ### Docker
 
 1. [Загрузить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
-1. Перезагрузить компьютер
-1. В Powershell выполнить ```docker images``` для показа установленных образов
+1. Выполнять авторизацию в Docker-Desktop не обязательно;
+1. Перезагрузить компьютер;
+1. В Powershell выполнить ```docker images``` для показа установленных образов;
 1. Установить тестовый контейнер ```docker run hello-world```
 
 ### Virtual Box (Для организации контроллера домена)
