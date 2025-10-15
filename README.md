@@ -58,8 +58,9 @@
 ### Docker
 
 1. [Загрузить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
-1. Выполнять авторизацию в Docker-Desktop не обязательно;
+1. Выполнять авторизацию в Docker-Desktop не обязательно, указать personal;
 1. Перезагрузить компьютер;
+1. Запустить Docker Desktop (можно добавить в автозагрузку);
 1. В Powershell выполнить ```docker images``` для показа установленных образов;
 1. Установить тестовый контейнер ```docker run hello-world```
 
