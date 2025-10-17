@@ -10,8 +10,8 @@
 - [Обеспечение качества функционирования компьютерных систем](/content/Ensuring_quality_computer_systems_functioning/README.md)
 - [Поддержка и тестирование программных модулей](/content/SupportAndtesting_of_software_modules/README.md)
 
-```
-> Со студентами составить навигацию по этому репозиторию средствами Markwodn!
+```markdown
+> Со студентами составить навигацию по этому репозиторию средствами Markdown!
 ```
 
 Минимальные требования к студентам
@@ -307,6 +307,10 @@ file enyFile.txt
 stat file1.txt
 ```
 
+Показать все ранее введённые команды:
+```shell
+history
+```
 
 #### Работа с git-ветками
 
