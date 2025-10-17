@@ -1,5 +1,15 @@
 # Конспект занятий
 
+## Навигация по проекту
+
+- [Todo](/Todo.md)
+- [Markdown](/Markdown.md)
+- [Bash](/content/Bash/)
+- [Docker](/content/Docker.md)
+- [Основы проектирования баз данных](/content/Basics_database_design/README.md)
+- [Обеспечение качества функционирования компьютерных систем](/content/Ensuring_quality_computer_systems_functioning/README.md)
+- [Поддержка и тестирование программных модулей](/content/SupportAndtesting_of_software_modules/README.md)
+
 ```
 > Со студентами составить навигацию по этому репозиторию средствами Markwodn!
 ```
