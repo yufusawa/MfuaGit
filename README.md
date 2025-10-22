@@ -332,9 +332,9 @@ cat file1.txt | less
 nano file1.txt
 ```
 
-> Сохранить текст по Ctrl+S, выйти из nano по Ctrl+X
+> Сохранить текст по **Ctrl+S**, выйти из nano по **Ctrl+X**
 
-Установить команду tree в Windows
+Установить команду **tree** в Windows
 
 [Tree](https://github.com/chocolatey/choco/releases?ysclid=mh035mg6en297039295)
 
