@@ -74,7 +74,7 @@
 1. В Powershell выполнить ```docker images``` для показа установленных образов;
 1. Установить тестовый контейнер ```docker run hello-world```
 
-[Подробные уроки по Docker для ничинающих](https://gitflic.ru/project/rurewa/altlinux/blob?file=content%2FDocker%2FDocker.md&branch=master&mode=markdown)
+[Подробный урок по Docker для начинающих](https://gitflic.ru/project/rurewa/altlinux/blob?file=content%2FDocker%2FDocker.md&branch=master&mode=markdown)
 
 ### Virtual Box (Для организации контроллера домена)
 
@@ -333,6 +333,19 @@ nano file1.txt
 ```
 
 > Сохранить текст по **Ctrl+S**, выйти из nano по **Ctrl+X**
+
+Можно ещё установить тектовый редактор Micro и редактировать файлы в нём:
+
+```shell
+apt install micro
+```
+
+Запустить консольный текстовый редактор **Micro** для создания и редактирования текстового файла
+```shell
+micro main.cpp
+```
+
+> Соранить текст по **Ctrl+S**, выйти из редактора по **Ctrl+Q**
 
 Установить команду **tree** в Windows
 
