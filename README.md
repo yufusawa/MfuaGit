@@ -82,6 +82,38 @@
 
 [Загрузить Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso)
 
+После установки Альт Образование 11 необходимо выполнить:
+
+Обновление ОС:
+
+Открыть Терминал (консоль) по **Ctrl+Alt+T**
+
+Войти в консоль как root
+```shell
+su-
+```
+
+```shell
+epm ei --auto && epm full-upgrade -y
+```
+
+перезагрузить
+
+потом:
+
+```shell
+epmi --auto newt52 lshw yt-dlp btop htop nvtop apt-repo apt-https NetworkManager-tui eget wget fd git ncdu micro xclip xsel mc tree glxgears glmark2 neofetch fastfetch whois curl inxi net-tools arp-scan aria2 alterator-grub sysctl-conf-userns
+```
+
+Проверить систему Альт Образование 11
+
+```shell
+fastfetch
+```
+
+```shell
+inxi -F
+```
 
 ### Настройки VSCode
 
