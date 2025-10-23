@@ -80,6 +80,11 @@
 
 [Загрузить и установить Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
 
+
+[Создание виртуальной машины в Virtual Box 7.0 для установки Альт Образование](https://rutube.ru/video/9f1c18dafa34d0c525bbca95d4002863/)
+
+[Установка Альт Образование 10 без UEFI](https://rutube.ru/video/8e0549a3a10f8881efb4260c77f4973b/)
+
 [Загрузить Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso)
 
 После установки Альт Образование 11 необходимо выполнить:
