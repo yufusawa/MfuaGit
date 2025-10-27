@@ -10,17 +10,13 @@
 - [Обеспечение качества функционирования компьютерных систем](/content/Ensuring_quality_computer_systems_functioning/README.md)
 - [Поддержка и тестирование программных модулей](/content/SupportAndtesting_of_software_modules/README.md)
 
-```markdown
-> Со студентами составить навигацию по этому репозиторию средствами Markdown!
-```
-
 [Минимальные технические требования для места разработчика](https://gitflic.ru/project/rurewa/cpp/file?branch=master)
 
 Минимальные требования к студентам
 
-1. Персональный компьютер и аудиогарнитура
+1. Персональный компьютер и аудиогарнитура. [Минимальные требования](https://gitflic.ru/project/rurewa/cpp/file?branch=master)
 1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/)
-1. Регистрация в Яндекса или VK
+1. Регистрация в [Яндекс](https://ya.ru/) или [VK](https://vk.com/)
 1. Сервис [gitflic.ru](gitflic.ru) и [Github](github.com)
 1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru)
 1. **Dia** [Dia](https://ru.wikipedia.org/wiki/Dia)
