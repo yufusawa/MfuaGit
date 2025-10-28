@@ -10,15 +10,13 @@
 - [Обеспечение качества функционирования компьютерных систем](/content/Ensuring_quality_computer_systems_functioning/README.md)
 - [Поддержка и тестирование программных модулей](/content/SupportAndtesting_of_software_modules/README.md)
 
-```markdown
-> Со студентами составить навигацию по этому репозиторию средствами Markdown!
-```
+[Минимальные технические требования для места разработчика](https://gitflic.ru/project/rurewa/cpp/file?branch=master)
 
 Минимальные требования к студентам
 
-1. Персональный компьютер и аудиогарнитура
+1. Персональный компьютер и аудиогарнитура. [Минимальные требования](https://gitflic.ru/project/rurewa/cpp/file?branch=master)
 1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/)
-1. Регистрация в Яндекса или VK
+1. Регистрация в [Яндекс](https://ya.ru/) или [VK](https://vk.com/)
 1. Сервис [gitflic.ru](gitflic.ru) и [Github](github.com)
 1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru)
 1. **Dia** [Dia](https://ru.wikipedia.org/wiki/Dia)
@@ -74,14 +72,51 @@
 1. В Powershell выполнить ```docker images``` для показа установленных образов;
 1. Установить тестовый контейнер ```docker run hello-world```
 
-[Подробные уроки по Docker для ничинающих](https://gitflic.ru/project/rurewa/altlinux/blob?file=content%2FDocker%2FDocker.md&branch=master&mode=markdown)
+[Подробный урок по Docker для начинающих](https://gitflic.ru/project/rurewa/altlinux/blob?file=content%2FDocker%2FDocker.md&branch=master&mode=markdown)
 
 ### Virtual Box (Для организации контроллера домена)
 
 [Загрузить и установить Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
 
+
+[Создание виртуальной машины в Virtual Box 7.0 для установки Альт Образование](https://rutube.ru/video/9f1c18dafa34d0c525bbca95d4002863/)
+
+[Установка Альт Образование 10 без UEFI](https://rutube.ru/video/8e0549a3a10f8881efb4260c77f4973b/)
+
 [Загрузить Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso)
 
+После установки **Альт Образование 11** необходимо выполнить:
+
+**Обновление ОС:**
+
+Открыть **Терминал** (консоль) по **Ctrl+Alt+T**
+
+Войти в консоль как **root**
+```shell
+su-
+```
+
+```shell
+epm ei --auto && epm full-upgrade -y
+```
+
+перезагрузить
+
+потом:
+
+```shell
+epmi --auto newt52 lshw yt-dlp btop htop nvtop apt-repo apt-https NetworkManager-tui eget wget fd git ncdu micro xclip xsel mc tree glxgears glmark2 neofetch fastfetch whois curl inxi net-tools arp-scan aria2 alterator-grub sysctl-conf-userns
+```
+
+Проверить систему Альт Образование 11
+
+```shell
+fastfetch
+```
+
+```shell
+inxi -F
+```
 
 ### Настройки VSCode
 
@@ -105,9 +140,11 @@
 ### Рекомендуемые навыки и умения
 
 1. "Слепая печать" на стандартной клавиатуре
+    - [Онлайн-клавиатурный тренажер](https://stamina-online.com/ru/)
+1. Эффективная работа с текстом
 1. Технический английский
-1. Быть подписанным на тематические группы в Телеграм
-1. Markdown
+1. Читать тематические группы в Телеграм
+1. Git+Markdown
 
 ### Git
 
@@ -117,6 +154,8 @@
 ```shell
 git --version
 ```
+
+**Представиться системе Git (выполняется однократно, перед 1-м коммитом)**
 
 Команды представления системе Git
 
@@ -135,8 +174,10 @@ git config --global user.email "rurewa@mail.ru"
 #### 2. Клонировать удалённый репозиторий на свой компьютер
 
 ```shell
-git clone https://gitflic.ru/project/kizdano/1234.git
+git clone https://gitflic.ru/project/rurewa/mfua
 ```
+
+> этой командой будет склонирован на ваш компьютер мой репозиторий.
 
 #### 3. Открыть папку склонированного репозитория
 
@@ -179,7 +220,7 @@ git push -u origin master
 
 #### 10. Проверить изменения на сайте удалённого репозитория
 
-Перейти на сайт репозитория и обновить страницу в браузере **Ctrl-R** либо **F5**
+Перейти на сайт проверяемого репозитория и обновить страницу в браузере **Ctrl-R** либо **F5**
 
 #### 11. Получить изменения из удалённого репозитория
 
@@ -261,7 +302,7 @@ git log
 
 #### Основные команды bash (командная строка, консоль)
 
-**Bash** - командный интерпритатор и скриптовый язык программирования
+**Bash** - командный интерпретатор и скриптовый язык программирования
 
 Показать текущее расположение
 
@@ -313,6 +354,42 @@ stat file1.txt
 ```shell
 history
 ```
+
+Показать содержимое текстового файла без его открытия
+```shell
+cat file1.txt
+```
+
+Пролистать большой текст клавишами ВВЕРХ/ВНИЗ
+```shell
+cat file1.txt | less
+```
+
+> Выйти из режима less по клавише Q
+
+Редактирование текстового файла
+```shell
+nano file1.txt
+```
+
+> Сохранить текст по **Ctrl+S**, выйти из nano по **Ctrl+X**
+
+Можно ещё установить тектовый редактор Micro и редактировать файлы в нём:
+
+```shell
+apt install micro
+```
+
+Запустить консольный текстовый редактор **Micro** для создания и редактирования текстового файла
+```shell
+micro main.cpp
+```
+
+> Соранить текст по **Ctrl+S**, выйти из редактора по **Ctrl+Q**
+
+Установить команду **tree** в Windows
+
+[Tree](https://github.com/chocolatey/choco/releases?ysclid=mh035mg6en297039295)
 
 #### Работа с git-ветками
 
@@ -380,3 +457,5 @@ history
 1. Обычно небольшие по объёму файлы,  < 40 mb.
 1. Изображения, документы, mp3, видео
 1. Все файлы с именами латинскими буквами без пробелов
+
+[Мои заметки по базовой работе с Git](https://gitflic.ru/project/rurewa/education/blob?file=content%2FGit%2FREADME.md&branch=master&mode=markdown)
