@@ -76,8 +76,9 @@
 
 ### Virtual Box (Для организации контроллера домена)
 
-[Загрузить и установить Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
+> Вместо Virtual Box можно использовать Hyper V
 
+[Загрузить и установить Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
 
 [Создание виртуальной машины в Virtual Box 7.0 для установки Альт Образование](https://rutube.ru/video/9f1c18dafa34d0c525bbca95d4002863/)
 
