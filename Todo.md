@@ -16,17 +16,17 @@
 
 ```
 * [x] Git (Git-bash)
-* [] Markdown
-* [] Bash
+* [x] Markdown
+* [] Bash-команды
+* [] Bash-программирование
 * [x] WSL 2.0 (Ubuntu)
 * [x] Virtual Box (Alt Education 11)
 * [] Static Website on Github Pages
-* [] Локальный веб-сервер на Alt Education 11
+* [] Контроллер домена и групповые политики на Alt Education 11
 * [] Docker - загрузка и установка + основы создания конейнеров и управления
 * [] Свои docker-контейнеры (веб-сервер, PostgreSQL, Python etc.)
 * [] Тестирование и отладка приложений
 * [] CI/CD
-* [] Групповые политики
 * [] Антивирусы
 * [] Брандмауэр
 ```
