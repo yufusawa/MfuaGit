@@ -101,8 +101,9 @@ git config --global user.email "rurewa@mail.ru"
 
 ### Virtual Box (Для организации контроллера домена)
 
-[Загрузить и установить Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
+> Вместо Virtual Box можно использовать **Hyper V**
 
+[Загрузить и установить Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
 
 [Создание виртуальной машины в Virtual Box 7.0 для установки Альт Образование](https://rutube.ru/video/9f1c18dafa34d0c525bbca95d4002863/)
 
@@ -160,18 +161,18 @@ inxi -F
 
 ### Настройки VSCode
 
-- Включить машстабирование по Ctrl+WheelMouse
-    - Settings -> Zoom -> Mouse Wheel Zoom
+- Включить машстабирование по **Ctrl+WheelMouse**
+    - **Settings** -> **Zoom** -> **Mouse Wheel Zoom**
 - Отключить Миникарту в редакторе
-    - Settings -> Editor -› Minimap:
+    - **Settings** -> **Editor** -› **Minimap:**
 
 Установка расширений
 
-- LiveServer (FiveServer)
+- LiveServer (**FiveServer**)
     - [LiveServer](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
-- CodeSnap
+- **CodeSnap**
     - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
-- Trailing Spaces
+- **Trailing Spaces**
     - [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
 
 Открыть и закрыть встроенный терминал по **Ctrl+~**
@@ -190,14 +191,28 @@ inxi -F
 
 #### 1. Запуск Git на персональном компьютере
 
-Проверить утановку Git в Powershell
+Проверить установку **Git** в **Powershell**
 ```shell
 git --version
 ```
 
+**Сменить редактор по умолчанию:**
+
+На **Nano** (проще для новичков):
+
+```shell
+git config --global core.editor "nano"
+```
+
+На **VS Code**:
+
+```shell
+git config --global core.editor "code --wait"
+```
+
 **Представиться системе Git (выполняется однократно, перед 1-м коммитом)**
 
-Команды представления системе Git
+Команды представления системе **Git**
 
 ```shell
 git config --global user.name "Rurewa"
@@ -308,7 +323,7 @@ git log
 
 ```git diff```
 
-сравнение до git commit - m
+сравнение до ```git commit - m```
 
 ```git diff --staged```
 
@@ -360,7 +375,7 @@ git log
 
 Переход в указанный каталог
 
-```cd foldername``` - где foldername - это имя целевого каталога
+```cd foldername``` - где *foldername* - это имя целевого каталога
 
 Выйти из текущего каталога вверх по иерархии
 
@@ -400,12 +415,12 @@ history
 cat file1.txt
 ```
 
-Пролистать большой текст клавишами ВВЕРХ/ВНИЗ
+Пролистать большой текст клавишами **ВВЕРХ/ВНИЗ**
 ```shell
 cat file1.txt | less
 ```
 
-> Выйти из режима less по клавише Q
+> Выйти из режима `less` по клавише **Q**
 
 Редактирование текстового файла
 ```shell
@@ -414,7 +429,7 @@ nano file1.txt
 
 > Сохранить текст по **Ctrl+S**, выйти из nano по **Ctrl+X**
 
-Можно ещё установить тектовый редактор Micro и редактировать файлы в нём:
+Можно ещё установить тектовый редактор **Micro** и редактировать файлы в нём:
 
 ```shell
 apt install micro
@@ -430,6 +445,10 @@ micro main.cpp
 Установить команду **tree** в Windows
 
 [Tree](https://github.com/chocolatey/choco/releases?ysclid=mh035mg6en297039295)
+
+```powershell
+choco install tree
+```
 
 #### Работа с git-ветками
 
