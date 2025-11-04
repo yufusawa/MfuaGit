@@ -24,10 +24,35 @@
 1. **Termux** (для Андроид) [Termux](https://termux.dev/en/)
 1. Компилятор **gcc** (Для Windows MinGW) [MinGW](https://www.mingw-w64.org/downloads/)
 1. **WSL 2.0** - установить Ubuntu - для БД [WSL 2.0](https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2Fwsl2.md&commit=f9dc07eb6d93862b751d82c6806a1f860043b785&mode=markdown)
+1. Docker - [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
 1. **Virtual Box** - для установки **Alt Образование 11** - для контроллера домена (групповые политики)
 [Virtual Box](https://www.oracle.com/virtualization/virtualbox/)
 [Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso)
 1. Нейросети [DeepSeek](https://chat.deepseek.com/) и [Cursor](https://cursor.com/)
+
+### Git
+
+Открыть Powersheell или Git-Bash
+
+Сделать тектовый редактор Nano по умолчанию
+```shell
+git config --global core.editor nano
+```
+
+Команды представления системе **Git**
+
+```shell
+git config --global user.name "Rurewa"
+```
+
+> где вместо **Rurewa** - ваш username
+
+```shell
+git config --global user.email "rurewa@mail.ru"
+```
+
+> где вместо `rurewa@mail.ru` - ваша почта
+
 
 ### WSL 2.0 для Windows 10 (для работы с БД)
 
@@ -65,8 +90,8 @@
 
 ### Docker
 
-1. [Загрузить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
-1. Выполнять авторизацию в Docker-Desktop не обязательно, указать personal;
+1. [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
+1. Выполнять авторизацию в Docker-Desktop (можно через Google), указать personal;
 1. Перезагрузить компьютер;
 1. Запустить Docker Desktop (можно добавить в автозагрузку для удобства);
 1. В Powershell выполнить ```docker images``` для показа установленных образов;
@@ -81,11 +106,26 @@
 
 [Создание виртуальной машины в Virtual Box 7.0 для установки Альт Образование](https://rutube.ru/video/9f1c18dafa34d0c525bbca95d4002863/)
 
-[Установка Альт Образование 10 без UEFI](https://rutube.ru/video/8e0549a3a10f8881efb4260c77f4973b/)
+[Установка Альт Образование 10/11 без UEFI](https://rutube.ru/video/8e0549a3a10f8881efb4260c77f4973b/)
 
 [Загрузить Альт Образование 11](https://download.basealt.ru/pub/distributions/ALTLinux/p11/images/education/x86_64/alt-education-11.0-x86_64.iso)
 
 После установки **Альт Образование 11** необходимо выполнить:
+
+Обновить ОС
+```shell
+epm ei --auto && epm full-upgrade -y
+```
+
+Установить дополнительные утилиты
+```shell
+epmi --auto newt52 lshw yt-dlp btop htop nvtop apt-repo apt-https NetworkManager-tui eget wget fd git ncdu micro xclip xsel mc tree glxgears glmark2 neofetch fastfetch whois curl inxi net-tools arp-scan aria2 alterator-grub sysctl-conf-userns cmatrix codetest_sl caca-utils asciiquarium
+```
+
+Установить средства разработки
+```shell
+epmi --auto valgrind rpm-build llvm-common-clang-tools clang-devel gcc-c++ cppcheck ghex cmake gdb ascii kdbg
+```
 
 **Обновление ОС:**
 
