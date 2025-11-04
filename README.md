@@ -36,7 +36,7 @@
 
 Сделать тектовый редактор Nano по умолчанию
 ```shell
-git config --global core.editor nano
+git config --global core.editor "nano"
 ```
 
 Команды представления системе **Git**
@@ -159,7 +159,7 @@ fastfetch
 inxi -F
 ```
 
-### Настройки VSCode
+### Минимальные настройки VSCode
 
 - Включить машстабирование по **Ctrl+WheelMouse**
     - **Settings** -> **Zoom** -> **Mouse Wheel Zoom**
@@ -169,7 +169,7 @@ inxi -F
 Установка расширений
 
 - LiveServer (**FiveServer**)
-    - [LiveServer](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
+    - [LiveServer(FiveServer)](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
 - **CodeSnap**
     - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 - **Trailing Spaces**
@@ -177,12 +177,13 @@ inxi -F
 
 Открыть и закрыть встроенный терминал по **Ctrl+~**
 
+(Подробней о настройках VSCode)[https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2FVCode.md&commit=b7894efff8eadc1c1fc442028810b950c8d6a432&mode=markdown]
 
 ### Рекомендуемые навыки и умения
 
 1. "Слепая печать" на стандартной клавиатуре
     - [Онлайн-клавиатурный тренажер](https://stamina-online.com/ru/)
-1. Эффективная работа с текстом
+1. Эффективная работа с текстом (важные клавиатурные сокращения)
 1. Технический английский
 1. Читать тематические группы в Телеграм
 1. Git+Markdown
@@ -210,7 +211,7 @@ git config --global core.editor "nano"
 git config --global core.editor "code --wait"
 ```
 
-**Представиться системе Git (выполняется однократно, перед 1-м коммитом)**
+**Представиться системе Git (выполняется однократно, после установки Git или перед 1-м коммитом)**
 
 Команды представления системе **Git**
 
