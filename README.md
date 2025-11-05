@@ -354,6 +354,8 @@ git log -p -3
 git checkout 94120de
 ```
 
+```git reset``` - вернуть проект к предыдущему состоянию
+
 Вернуться на последний коммит
 ```shell
 git checkout master
@@ -384,8 +386,6 @@ git checkout master
 ```git remote show origin```
 
 Отмена изменений
-
-```git reset``` - отмена индексации
 
 ```git restore```
 
