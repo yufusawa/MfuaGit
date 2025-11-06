@@ -387,6 +387,8 @@ git checkout 94120de
 git checkout master
 ```
 
+или вместо **master** укажите **main**
+
 Сравнения коммитов
 
 ```git diff```
