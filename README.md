@@ -197,6 +197,11 @@ inxi -F
 git --version
 ```
 
+Показать справку о Git
+```shell
+git help
+```
+
 **Сменить редактор по умолчанию:**
 
 На **Nano** (проще для новичков):
@@ -409,19 +414,41 @@ git checkout master
 
 Показать информацию об удалённом репозитории
 
+Показать источники
 ```git remote -v```
 
 ```git remote show origin```
 
-Отмена изменений
+### Работа с git-ветками
 
-```git restore```
+Показать все ветки
+```shell
+git branch
+```
 
-```git restore --staged``` - сработает только после ```add .```
+или
 
-Объединить команды ```git add``` . и ```git commit -m```
+```shell
+git branch --all
+```
 
-```git commit -a 'Some comments'```
+Создать новую ветку
+```shell
+git branch test
+```
+
+где test - это имя создаваемой ветки
+
+Переключиться на другую ветку
+```shell
+git switch master
+```
+
+или
+
+```shell
+git checkout test
+```
 
 #### Основные команды bash (командная строка, консоль)
 
