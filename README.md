@@ -299,6 +299,10 @@ git commit -m "Some message"
 git commit -a -m 'Update README.md'
 ```
 
+Изменение комментария последнего коммита
+
+```git commit --amend```
+
 #### 9. Запушить
 
 ```shell
@@ -402,10 +406,6 @@ git checkout master
 Показать настройки текущего (локального) git-репозитория
 
 ```git config --list```
-
-Изменение комментария последнего коммита
-
-```git commit --amend```
 
 Показать информацию об удалённом репозитории
 
