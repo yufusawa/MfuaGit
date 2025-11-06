@@ -294,6 +294,11 @@ git restore --staged README.md
 git commit -m "Some message"
 ```
 
+Объединить ```git add``` и ```git commit```:
+```shell
+git commit -a -m 'Update README.md'
+```
+
 #### 9. Запушить
 
 ```shell
