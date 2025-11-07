@@ -450,6 +450,11 @@ git switch master
 git checkout test
 ```
 
+ещё можно создать новую ветку с автоматическим переходом в неё
+```shell
+git checkout -b test
+```
+
 Отправить новую ветку на сервер
 ```shell
 git push --set-upstream origin test
