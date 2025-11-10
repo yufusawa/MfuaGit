@@ -5,3 +5,5 @@
 [Cамостоятельная работа: "Создание портфолио проектов с использованием Git и Markdown](CreatingPortfolioGit_Markdown.md)
 
 [Самостоятельная работа по созданию проекта c привлекательным README.md](/content/StudentPracticalsLabs/beautifulREADME.md)
+
+[Техническое задание: Разработка Wiki-сайта с использованием Git и GitHub Pages](/content/StudentPracticalsLabs/GitHubPages.md)
