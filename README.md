@@ -471,7 +471,13 @@ git branch -d test
 
 Ветку **anybranch** слить с **master**
 
-Переходим в ветку master и выполняем
+Переходим в ветку master
+```shell
+git switch master
+```
+
+ и выполняем слияние 2-х веток в одну
+
 ```shell
 git merge anybranch
 ```
