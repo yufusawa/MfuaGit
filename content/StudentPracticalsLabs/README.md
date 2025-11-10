@@ -3,3 +3,5 @@
 [Ведение проекта документации по качеству с использованием Git и Markdown](/content/Ensuring_quality_computer_systems_functioning/StudentPracticalsLabs/DocsGitMarkdown.md)
 
 [Cамостоятельная работа: "Создание портфолио проектов с использованием Git и Markdown](CreatingPortfolioGit_Markdown.md)
+
+[Самостоятельная работа по созданию красивого README.md проекта](/content/StudentPracticalsLabs/beautifulREADME.md)
