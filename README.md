@@ -416,18 +416,18 @@ git checkout master
 
 ### Работа с git-ветками
 
-Показать все ветки
+Показать локальные ветки
 ```shell
 git branch
 ```
 
-или
+или показать все ветки (в т.ч. удалённые)
 
 ```shell
 git branch --all
 ```
 
-Создать новую ветку
+Создать новую локальную ветку
 ```shell
 git branch test
 ```
@@ -457,12 +457,17 @@ git push --set-upstream origin test
 
 где `test` -  имя отправляемой ветки
 
-Удалить указанную ветку
+Удалить удалённую ветку
 ```shell
 git push origin --delete test
 ```
 
-Слияние веток
+Удалить локальную ветку
+```shell
+git branch -d test
+```
+
+#### Слияние веток
 
 Ветку **anybranch** слить с **master**
 
