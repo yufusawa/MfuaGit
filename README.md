@@ -457,7 +457,12 @@ git push --set-upstream origin test
 
 где `test` -  имя отправляемой ветки
 
-Слияне веток
+Удалить указанную ветку
+```shell
+git push origin --delete test
+```
+
+Слияние веток
 
 Ветку **anybranch** слить с **master**
 
