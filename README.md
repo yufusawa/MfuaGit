@@ -476,7 +476,7 @@ git branch -d test
 git switch master
 ```
 
- и выполняем слияние 2-х веток в одну
+и выполняем слияние 2-х веток в одну
 
 ```shell
 git merge anybranch
@@ -484,7 +484,7 @@ git merge anybranch
 
 #### Файл .gitignore
 
-"Чёрный список" файлов, которые не нужно сохранять в проекте. Обычно это фременные файлы.
+"Чёрный список" файлов (их расширений), которые не нужно сохранять в проекте. Обычно это фременные файлы.
 
 [A collection of .gitignore templates](https://github.com/github/gitignore)
 
