@@ -1,8 +1,12 @@
 ## Mermaid — это инструмент для создания диаграмм и визуализаций с помощью простого текстового синтаксиса, подобного Markdown. Он поддерживает различные типы диаграмм: блок-схемы, последовательности, Gantt-диаграммы, графики зависимостей и другие.
 
-###
+### Задание студентам
 
-Все типы диаграмм одним списком:
+- Создать новые публичные репозитории на Github или Gitlab
+- Язык нового репозитория Markdown, README.md
+- Склонировать себе и открыть в VSCode
+
+Все типы диаграмм:
 
 - **Блок-схемы**         - graph, flowchart
 - **Последовательности** - sequenceDiagram
@@ -32,17 +36,17 @@
 - `dateFormat` — формат даты.
 - `section` — раздел проекта.
 - `:id`, `start`, `duration` — задача.
-- `pie` - круговая дикграмма
+- `pie` - круговая диаграмма
 
 ### Установка планигов  поддержки Marmaid
 
-Установить плагины в VSCode
+Установить плагины в **VSCode**
 
 [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
 
 [Mermaid Markdown Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting)
 
-Для установки в VSCode выполните **Ctrl-P** и в открывшемся вверху поле вставьте сл.строки по очереди, нажимая Enter:
+Для установки в **VSCode** выполните **Ctrl-P** и в открывшемся вверху поле вставьте сл.строки по очереди, нажимая Enter:
 
 ```
 ext install bierner.markdown-mermaid
@@ -175,6 +179,14 @@ pie
     "Samsung" : 30
     "Xiaomi" : 15
     "Другие" : 10
+```
+
+```mermaid
+pie title Кол-во
+   "Windows" : 45.6
+   "macOS" : 25.3
+   "Linux" : 15.2
+   "Другие" : 13.9
 ```
 
 ```mermaid
