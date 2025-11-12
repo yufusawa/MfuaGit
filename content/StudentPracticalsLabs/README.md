@@ -9,3 +9,5 @@
 [Техническое задание: Разработка Wiki-сайта с использованием Git и GitHub Pages](/content/StudentPracticalsLabs/GitHubPages.md)
 
 [Задания по Mermaid для студентов](/content/StudentPracticalsLabs/Mermaid.md)
+
+[Командная  разработка проекта](/content/StudentPracticalsLabs/TeamDevelopment.md)
