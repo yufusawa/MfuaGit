@@ -377,7 +377,7 @@ fi
 
 ## Циклы
 
-### for循环
+### for
 
 ```bash
 #!/bin/bash
@@ -397,7 +397,7 @@ for file in *.txt; do
 done
 ```
 
-### while循环
+### while
 
 ```bash
 #!/bin/bash

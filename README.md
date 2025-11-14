@@ -232,7 +232,7 @@ git config --global user.email "rurewa@mail.ru"
 
 > где вместо `rurewa@mail.ru` - ваша почта
 
-#### 2. Клонировать удалённый репозиторий на свой компьютер
+#### 2. Клонировать удалённый репозиторий на свой компьютер в Git-Bash
 
 ```shell
 git clone https://gitflic.ru/project/rurewa/mfua
