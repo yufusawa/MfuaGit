@@ -309,7 +309,7 @@ git commit -m "Some message"
 git commit -a -m 'Update README.md'
 ```
 
-Изменение комментария последнего коммита
+Изменение текста последнего коммита
 
 ```git commit --amend```
 
