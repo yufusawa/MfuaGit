@@ -263,8 +263,3 @@ netstat -an
 ```shell
 route
 ```
-
-
-
-
-
