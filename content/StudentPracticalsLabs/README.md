@@ -6,7 +6,9 @@
 
 [Самостоятельная работа по созданию проекта c привлекательным README.md](/content/StudentPracticalsLabs/beautifulREADME.md)
 
-[Техническое задание: Разработка Wiki-сайта с использованием Git и GitHub Pages](/content/StudentPracticalsLabs/GitHubPages.md)
+[Техническое задание: Разработка статического cайта-визитки с использованием Git и GitHub Pages](/content/StudentPracticalsLabs)
+
+[Техническое задание: Разработка статического Wiki-cайта с использованием Git и GitHub Pages](/content/StudentPracticalsLabs/WikiGitHubPages.md)
 
 [Задания по Mermaid для студентов](/content/StudentPracticalsLabs/Mermaid.md)
 
