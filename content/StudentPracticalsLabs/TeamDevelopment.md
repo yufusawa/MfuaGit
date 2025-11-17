@@ -24,10 +24,10 @@
 - Прислать мне ссылки на готовый сайт.
 
 ### Рекомендуемые ветки
-main/master    - стабильная версия
-develop        - разработка
-feature/*      - новые функции
-hotfix/*       - срочные исправления
+* main/master    - стабильная версия
+* develop        - разработка
+* feature/*      - новые функции
+* hotfix/*       - срочные исправления
 
 ### Примерная структура проекта
 ```
@@ -69,6 +69,18 @@ my-portfolio-site/
 ├── 📄 README.md                  # Описание проекта
 ├── 📄 .gitignore                 # Исключения для Git
 └── 📄 sitemap.xml                # Карта сайта (опционально)
+```
+
+Такую структуру каталогов можно создать одной командой в Терминале:
+
+```shell
+mkdir -p project/{css,js,images/icons,fonts,pages}
+```
+
+Если надо создать командой bash все каталоги и файламы, то:
+
+```shell
+mkdir -p my-portfolio-site/{css,js,images/{portfolio,icons},fonts,documents} && touch my-portfolio-site/{index.html,about.html,contact.html,portfolio.html,404.html,README.md,.gitignore,sitemap.xml} && touch my-portfolio-site/css/{style.css,reset.css,responsive.css} && touch my-portfolio-site/js/{main.js,menu.js,form-validation.js} && touch my-portfolio-site/images/{avatar.jpg,logo.png} && touch my-portfolio-site/images/portfolio/{project1.jpg,project2.jpg,project3.jpg} && touch my-portfolio-site/images/icons/{github.svg,telegram.svg,email.svg} && touch my-portfolio-site/fonts/custom-font.woff2 && touch my-portfolio-site/documents/resume.pdf
 ```
 
 ### Полезные команды для команды
