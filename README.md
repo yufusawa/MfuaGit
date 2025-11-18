@@ -174,6 +174,11 @@ inxi -F
     - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 - **Trailing Spaces**
     - [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
+  **Mermaid**
+- [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
+  **Markdown Syntax Highlighting**
+- [Mermaid Markdown Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting)
+
 
 Открыть и закрыть встроенный терминал по **Ctrl+~**
 
