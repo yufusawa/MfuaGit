@@ -1,92 +1,248 @@
 ### [Вернуться на Главную](/README.md)
 
-### Аналогия: Корабль и Контейнеры
+## Docker
 
-Представь, что твое приложение — это **груз** (например, партия ноутбуков). Этот груз нужно перевезти из точки А (твой компьютер) в точку Б (сервер).
+### Получить Docker
 
-*   **Старый способ (без Докера):** Ты грузишь ноутбуки на корабль (сервер), а там уже установлена операционная система (Windows/Linux). Но проблема в том, что на сервере могут быть свои версии библиотек, свой Node.js, своя база данных. Твой код, который работал у тебя на Windows 10, может запросто сломаться на сервере с Ubuntu, потому что "чего-то не хватает" или "версии не те". Это знакомая фраза **"У меня на машине работает!"**.
-
-*   **Способ с Докером:** Ты не просто грузишь ноутбуки. Ты упаковываешь каждый ноутбук в свой собственный **контейнер**. В этом контейнере уже есть *всё необходимое* для его работы: нужная версия Node.js, все библиотеки, настройки системы — абсолютно всё. Теперь тебе всё равно, на каком корабле (сервере) плыть. Где бы ты ни открыл контейнер, ноутбук внутри будет работать одинаково, потому что его среда неизменна.
-
-**Итог аналогии:** Докер — это инструмент для упаковки приложения вместе со всей его средой выполнения в переносимую, самостоятельную единицу — **контейнер**.
-
----
-
-### Основные понятия без заумных слов
-
-1.  **Docker Image (Образ)**
-    Это как **чертеж** или **шаблон** для создания контейнеров. Файл с инструкциями: "возьми такую-то операционную систему, скопируй вот эти файлы, установи такие-то библиотеки, запусти такую-то команду". Образ сам по себе не запущен, он статичен. Это как `setup.exe` файл для твоего приложения.
-
-2.  **Docker Container (Контейнер)**
-    Это **запущенный экземпляр образа**. Если образ — это чертеж, то контейнер — это дом, построенный по этому чертежу. Ты можешь запустить несколько одинаковых контейнеров из одного образа (как построить несколько одинаковых домов). Контейнер — это и есть твое работающее приложение.
-
-3.  **Dockerfile**
-    Это простой текстовый файл, в котором ты пишешь инструкции для сборки образа (Типа рецепт).
-    Пример:
-    ```dockerfile
-    # Возьми официальный образ Node.js
-    FROM node:18
-    # Создай папку в контейнере
-    WORKDIR /app
-    # Скопируй файлы с твоего компьютера в контейнер
-    COPY package*.json ./
-    # Выполни команду установки зависимостей
-    RUN npm install
-    # Скопируй весь исходный код
-    COPY . .
-    # Скажи, какую команду выполнить для запуска приложения
-    CMD ["node", "server.js"]
+- **Windows**
+    - [Загрузить и установить **Docker-Desktop**](https://www.docker.com/products/docker-desktop/)
+    - Выполнять авторизацию в **Docker-Desktop** (можно через Google), указать personal;
+    - Перезагрузить компьютер;
+    - Запустить **Docker Desktop** (можно добавить в автозагрузку для удобства);
+    - Перезапустить систему
+- **MacOS**
+    - Установка **Docker Desktop** через **Homebrew**
+    - **Homebrew** (очень рекомендуется для macOS), вы можете установить Docker Desktop с помощью одной команды:
+    ```shell
+    brew install --cask docker
     ```
-
-4.  **Docker Hub / Registry (Реестр)**
-    Это как **GitHub для образов**. Ты можешь скачать (`docker pull`) готовые образы (например, образ Node.js, PostgreSQL, Nginx) и использовать их как основу для своих. И ты можешь загружать (`docker push`) туда свои образы, чтобы другие могли их использовать.
-
----
-
-### Зачем это всё тебе, начинающему разработчику?
-
-*   **Избавление от "а у меня работает"**: Ты гарантируешь, что приложение будет работать везде, где есть Докер. На макше коллеги, на Windows у заказчика, на Linux-сервере.
-*   **Быстрый старт для новых проектов**: Вместо того чтобы часами настраивать окружение (установить PostgreSQL, Redis, Elasticsearch), ты просто пишешь `docker-compose up`, и всё поднимается готовыми контейнерами.
-*   **Чистота на машине:** Тебе не нужно засорять свою основную операционную систему кучей версий языков и сервисов. Всё изолировано в контейнерах.
-*   **Упрощение деплоя:** Большинство облачных платформ (AWS, Google Cloud, Heroku) умеют работать с Докер-образами. Ты просто загружаешь свой образ, и они его запускают.
-
----
-
-### Самые частые команды, с которых стоит начать
-
-1.  **Собрать образ из Dockerfile:**
-    ```bash
-    docker build -t my-app .
+    - Убедитесь, что **Homebrew** установлен: Если нет, установите его.
+    Выполните команду в Терминале:
+    ```shell
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
-    (`my-app` — это имя твоего образа, точка в конце — путь к Dockerfile)
+    - Запустите Docker: После установки запустите приложение **Docker Desktop** из папки "Приложения".
+    > Важно: Docker Desktop использует виртуализацию и требует, чтобы на вашем **Mac** был включен фреймворк **HyperKit**. Приложение автоматически настраивает все необходимые компоненты.
 
-2.  **Запустить контейнер из образа:**
-    ```bash
-    docker run -p 3000:3000 my-app
-    ```
-    (Это значит: "запусти контейнер из образа `my-app` и пробрось порт 3000 из контейнера на порт 3000 моей машины")
+- **Linux**
+    - **Ubuntu**
+        - `sudo apt update sudo apt install ca-certificates curl gnupg lsb-release -y`
+        - `sudo mkdir -p /etc/apt/keyrings curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
+        - `echo \ "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+        - `sudo apt update sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y`
+        - `sudo systemctl status docker`
+        - `sudo docker run hello-world`
+        - `reboot`
+    - **Alt Linux**
+        - `su-`
+        - `apt-get install docker-engine docker-compose-v2`
+        - `usermod ИМЯ_ПОЛЬЗОВАТЕЛЯ -aG docker`
+        - `systemctl enable --now docker`
+        - `reboot`
 
-3.  **Посмотреть запущенные контейнеры:**
-    ```bash
-    docker ps
-    ```
+### Начало работы
 
-4.  **Остановить контейнер:**
-    ```bash
-    docker stop <container_id>
-    ```
-    (`<container_id>` можно подсмотреть в выводе `docker ps`)
+Проверить Docker:
+```shell
+docker --version
+```
 
-5.  **Посмотреть все образы:**
-    ```bash
-    docker images
-    ```
+или подробно:
+```shell
+docker version
+```
 
-### Что дальше?
+**Docker образ** - это файлы, типа .iso
+**Docker контейнер** - это процесс
 
-Начни с малого:
-1.  Напиши простое приложение на любом языке (хоть "Hello World" на Node.js/Python).
-2.  Создай в папке проекта `Dockerfile` (как в примере выше).
-3.  Собери образ (`docker build`).
-4.  Запусти его (`docker run`).
-5.  Зайди в браузере на `http://localhost:3000` и увидь свое работающее приложение.
+Установить и запустить тестовый Docker-контейнер
+```shell
+docker run hello-world
+```
+
+Установить контейнер **Nginx**
+```shell
+docker run -d -p 8081:80 --name my-nginx nginx
+```
+
+- `-d` - запуск в фоном режиме
+- `-p` - проброс порта
+- `--name` - понятное имя контейнера
+
+Проверить защенный конейнер **Nginx**
+```shell
+curl http://localhost:8081
+```
+
+Команда должна вернуть исходный код веб-страницы сервера
+
+Открыть адрес локального веб-сервера **Nginx**:
+[localhost:8081](localhost:8081)
+
+Проверить состояние запущенных контейнеров:
+```shell
+docker ps
+```
+
+Показать все контейнеры, включая остановленные:
+```shell
+docker ps -a
+```
+
+Остановить запущенный контейнер:
+```shell
+docker stop my-nginx
+```
+
+Запустить контейнер:
+```shell
+docker start my-nginx
+```
+
+Удалить выбранный контейнер:
+
+- Сначала остановить удаляемый контейнер
+- Определяем его ID:
+```shell
+docker ps -a
+```
+- Удаляем:
+```shell
+docker rm 998f036ea9e8
+```
+
+Удалить выбранный образ
+
+- Сначала остановить удаляемый контейнер образа
+- Определить имя Docker образа:
+```shell
+docker images
+```
+- Удалить:
+```shell
+docker rmi hello-world
+```
+
+### Установка и управление БД PostgresSQL
+
+Создать структуру будущего проекта:
+```
+postgres-docker-project
+├── backups
+├── data
+└── scripts
+```
+
+можно командой в терминале:
+```shell
+mkdir -p postgres-docker-project/{data,scripts,backups}
+```
+
+Войти в каталог `postgres-docker-project`
+```shell
+cd postgres-docker-project
+```
+
+Создать файл `docker-compose.yml`
+```shell
+touch docker-compose.yml
+```
+
+Вставить в него этот код:
+```yml
+services:
+  postgres:
+    image: postgres:15
+    container_name: new-postgres
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./backups:/backups
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U myuser -d mydatabase"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+```
+
+Перейти в каталог `scripts`
+```shell
+cd scripts
+```
+
+в файл `init.sql` вставить код:
+```sql
+CREATE DATABASE app_db;
+CREATE USER app_user WITH PASSWORD 'app_password';
+GRANT ALL PRIVILEGES ON DATABASE app_db TO app_user;
+\c mydatabase;
+CREATE TABLE IF NOT EXISTS users (    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO users (name, email) VALUES
+('Иван Иванов', 'ivan@example.com'),
+('Мария Петрова', 'maria@example.com')
+ON CONFLICT (email) DO NOTHING;
+```
+
+Запустить контейнер:
+```shell
+docker compose up -d
+```
+
+Показать логи базы данных `postgres`
+```shell
+docker compose logs postgres
+```
+
+Приостановить запущенный контейнер:
+```shell
+docker compose stop
+```
+
+Запустить приостановленный контейнер:
+```shell
+docker compose start
+```
+
+Показать конфигурацию текущего проекта:
+```shell
+docker compose config
+```
+
+
+Остановить запущенный контейнер (остановка + удаление)
+```shell
+docker compose down
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
