@@ -225,6 +225,59 @@ docker compose config
 docker compose down
 ```
 
+Подкдючиться к запущенной БД
+```shell
+docker exec -it new-postgres psql -U myuser mydatabase
+```
+
+Показать справу по работе с БД Postgres
+```
+HELP
+```
+
+Выйти из БД
+```
+\q
+```
+
+Работа с БД внутри контейнера
+
+Исследовать текущую БД:
+```sql
+\l
+```
+
+Показать таблицы текущей БД:
+```sql
+\dt
+```
+
+Показат подробую ин-у о таблицах
+```sql
+\d+
+```
+
+Создать свои таблицы и данные
+
+Создаем новую таблицу
+```sql
+CREATE TABLE products (id SERIAL PRIMARY KEY,name VARCHAR(100) NOT NULL,price DECIMAL(10,2),created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+```
+
+Вставляем в неё тестовые данные
+
+```sql
+INSERT INTO products (name, price) VALUES ('Laptop', 999.99), ('Mouse', 29.99), ('Keyboard', 79.99);
+```
+
+Проверяем данные новой таблицы
+```sql
+SELECT * FROM products;
+```
+
+
+
+
 
 
 
