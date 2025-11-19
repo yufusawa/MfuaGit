@@ -275,6 +275,47 @@ INSERT INTO products (name, price) VALUES ('Laptop', 999.99), ('Mouse', 29.99), 
 SELECT * FROM products;
 ```
 
+Остановить контейнер:
+```shell
+docker compose down
+```
+
+Остановить контейнер и удалить данные:
+```shell
+docker compose down -v
+```
+
+Проверить состояние сетевых подключений Docker-контейнеров:
+```shell
+docker network ls
+```
+
+Полное удаление выбранного контейнера и образа
+
+- Сначала остановить удаляемый контейнер
+- Определяем его ID:
+```shell
+docker ps -a
+```
+- Удаляем:
+```shell
+docker rm 3a64cdd0d9f5
+```
+
+Удаляем образ контейнера
+
+Определяем ID образа:
+```shell
+docker images
+```
+
+```shell
+docker rmi postgres:15
+```
+
+
+
+
 
 
 
