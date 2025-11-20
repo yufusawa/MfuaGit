@@ -17,13 +17,13 @@
 - Вместе придумывают проект, например - "Сайт компании по разработки Телеграм-ботов";
 - Сайт статический, **HTML+CSS+JS** на 5-6 страниц с картинками;
 - Договориться между собой в Телеграме или в Teams, кто какую работу по созданию сайта будет выполнять;
-- Создать несколько веток разработки сайта, например: **develop**, **feature**, **hotfix**;
+- Создать дополнительную ветку для разработки сайта, например **develop**;
 - Создать сайт;
 - Красиво оформить `README.md` проекта, с картинками, списками, ссылками и диаграмой на **Mermaid**;
 - Включить технологию **Github Page** для получения ссылки на сайт;
 - Прислать мне ссылки на готовый сайт.
 
-### Рекомендуемые ветки
+### Примерные ветки проекта
 * main/master    - стабильная версия
 * develop        - разработка
 * feature/*      - новые функции
@@ -77,7 +77,7 @@ my-portfolio-site/
 mkdir -p project/{css,js,images/icons,fonts,pages}
 ```
 
-Если надо создать командой bash все каталоги и файламы, то:
+Если надо создать командой **bash** все каталоги и файламы, то:
 
 ```shell
 mkdir -p my-portfolio-site/{css,js,images/{portfolio,icons},fonts,documents} && touch my-portfolio-site/{index.html,about.html,contact.html,portfolio.html,404.html,README.md,.gitignore,sitemap.xml} && touch my-portfolio-site/css/{style.css,reset.css,responsive.css} && touch my-portfolio-site/js/{main.js,menu.js,form-validation.js} && touch my-portfolio-site/images/{avatar.jpg,logo.png} && touch my-portfolio-site/images/portfolio/{project1.jpg,project2.jpg,project3.jpg} && touch my-portfolio-site/images/icons/{github.svg,telegram.svg,email.svg} && touch my-portfolio-site/fonts/custom-font.woff2 && touch my-portfolio-site/documents/resume.pdf
