@@ -59,7 +59,7 @@ ext install bpruitt-goddard.mermaid-markdown-syntax-highlighting
 
 ### Примеры втраиваемых в Markdown диаграмм Mermaid
 
-### Как сделать список в Markdown?
+### Как сделать диаграмму связей?
 ```mermaid
 flowchart LR
     A[Вопрос: Как сделать список?] --> B["Ответ: Через `-` или `*`"]
