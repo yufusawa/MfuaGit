@@ -189,7 +189,7 @@ inxi -F
 
 Открыть и закрыть встроенный терминал по **Ctrl+~**
 
-(Подробней о настройках VSCode)[https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2FVCode.md&commit=b7894efff8eadc1c1fc442028810b950c8d6a432&mode=markdown]
+[Подробней о настройках VSCode](https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2FVCode.md&commit=b7894efff8eadc1c1fc442028810b950c8d6a432&mode=markdown)
 
 ### Рекомендуемые навыки и умения
 
