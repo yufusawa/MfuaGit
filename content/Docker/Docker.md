@@ -171,6 +171,8 @@ docker images
 docker rmi hello-world
 ```
 
+### Docket Compose
+
 ### Установка и управление БД PostgresSQL
 
 Создать структуру будущего проекта:
