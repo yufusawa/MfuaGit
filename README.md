@@ -29,7 +29,7 @@
     ```
 1. **VSCode** [VSCode](https://code.visualstudio.com/)
 1. **Termux** (для Андроид) [Termux](https://termux.dev/en/)
-1. Компилятор **gcc** (Для Windows MSYS2) [Cygwin](https://cygwin.com/) или [MSYS2](https://www.msys2.org/)
+1. Компилятор **gcc** (Для Windows MSYS2) [MSYS2](https://www.msys2.org/) или [Clang](https://releases.llvm.org/download.html)
 1. **WSL 2.0** - установить Ubuntu - для БД [WSL 2.0](https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2Fwsl2.md&commit=f9dc07eb6d93862b751d82c6806a1f860043b785&mode=markdown)
 1. Docker - [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
 1. **Virtual Box** - для установки **Alt Образование 11** - для контроллера домена (групповые политики)
@@ -39,7 +39,7 @@
 
 ### Git
 
-Открыть Powersheell или Git-Bash
+Открыть **Powersheell** или **Git-Bash**
 
 Сделать тектовый редактор Nano по умолчанию
 ```shell
