@@ -178,6 +178,11 @@ git push
 git pull && git push
 ```
 
+или более "мягкий" вариант
+```shell
+git getch && git push
+```
+
 или, если не получилось с 1-го раза запушить, то:
 
 ```shell
@@ -196,6 +201,11 @@ git push -u origin master
 
 ```shell
 git pull
+```
+
+или более "мягкий" вариант
+```shell
+git fetch
 ```
 
 ### Получить список коммитов текущего репозитория
