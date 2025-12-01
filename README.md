@@ -60,6 +60,8 @@ git config --global user.email "rurewa@mail.ru"
 
 > где вместо `rurewa@mail.ru` - ваша почта
 
+### [Подробней о Git >>>](/content/Git/README.md)
+
 
 ### WSL 2.0 для Windows 10 (для работы с БД)
 
