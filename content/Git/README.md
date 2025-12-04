@@ -259,6 +259,12 @@ git checkout 94120de
 ```
 
 Вернуться на последний коммит
+
+```shell
+git switch -
+```
+
+или
 ```shell
 git checkout master
 ```
