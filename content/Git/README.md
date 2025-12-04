@@ -304,7 +304,7 @@ git branch test
 
 Переключиться на другую ветку
 ```shell
-git switch master
+git switch test
 ```
 
 или
