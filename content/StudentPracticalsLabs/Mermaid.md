@@ -245,7 +245,7 @@
 
 
 
-1. Используйте **VSCode** с установленными расширениями `Markdown Preview Mermaid Support` и `Mermaid Markdown Syntax Highlighting` для тестирования диаграмм
+4. Используйте **VSCode** с установленными расширениями `Markdown Preview Mermaid Support` и `Mermaid Markdown Syntax Highlighting` для тестирования диаграмм
 1. Добавляйте комментарии в код **Mermaid** `%% Это комментарий %%`
 1. Экспериментируйте с темами и стилями
 1. Проверяйте диаграммы на читаемость встроенными средствами **VSCode**
