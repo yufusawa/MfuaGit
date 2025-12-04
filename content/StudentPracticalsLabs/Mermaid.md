@@ -243,8 +243,6 @@
 
 ![Mermaid](/content/img/mermaid_11.png)
 
-
-
 - Используйте **VSCode** с установленными расширениями `Markdown Preview Mermaid Support` и `Mermaid Markdown Syntax Highlighting` для тестирования диаграмм
 - Добавляйте комментарии в код **Mermaid** `%% Это комментарий %%`
 - Экспериментируйте с темами и стилями
