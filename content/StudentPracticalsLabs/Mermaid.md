@@ -239,7 +239,10 @@
 1. Используйте сервисы **Github** или **Gitlab** для удалённого хранения кода (они полностью поддерживают Mermaid)
 1. Начинайте с простых диаграмм
 1. Обрамляйте код на **Mermaid** тегами:
-  ![Mermaid](/content/img/mermaid_11.png)
+![Mermaid](/content/img/mermaid_11.png)
+
+
+
 1. Используйте **VSCode** с установленными расширениями `Markdown Preview Mermaid Support` и `Mermaid Markdown Syntax Highlighting` для тестирования диаграмм
 1. Добавляйте комментарии в код **Mermaid** `%% Это комментарий %%`
 1. Экспериментируйте с темами и стилями
