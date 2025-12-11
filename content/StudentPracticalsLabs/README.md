@@ -13,3 +13,5 @@
 [Задания по Mermaid для студентов](/content/StudentPracticalsLabs/Mermaid.md)
 
 [Командная  разработка проекта](/content/StudentPracticalsLabs/TeamDevelopment.md)
+
+[Задания по Bash программированию для начинающих](/content/StudentPracticalsLabs/bashScript.md)
