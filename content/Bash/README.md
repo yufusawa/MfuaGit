@@ -1,4 +1,4 @@
-# Bash скрипты для начинающих для студентов
+# Bash скрипты для студентов
 
 > ### [Инструкция по командам Bash тут](/content/Bash/BashCLI.md)
 
@@ -312,8 +312,10 @@ chmod +x script.sh
 name="Алексей"
 age=25
 echo "Меня зовут $name, мне $age лет"
+```
 
 # Чтение ввода
+```bash
 echo "Введите ваше имя:"
 read user_name
 echo "Привет, $user_name!"
@@ -384,16 +386,21 @@ fi
 # Простой for
 for i in 1 2 3 4 5; do
     echo "Итерация: $i"
+    sleep 0.5
 done
+```
 
 > Задержка по sleep 0.5 (полсекунды)
 
-# For с диапазоном
+#### For с диапазоном
+```bash
 for i in {1..5}; do
     echo "Число: $i"
 done
+```
 
-# For с файлами
+#### For с файлами
+```bash
 for file in *.txt; do
     echo "Обрабатываю файл: $file"
 done
@@ -416,6 +423,8 @@ while true; do
     sleep 0.2
 done
 
+> Остановить бесконечный цикл можно по `Ctrl+C`
+
 # Бесконечный цикл с break
 while true; do
     echo "Введите 'stop' для выхода:"
@@ -425,6 +434,8 @@ while true; do
     fi
 done
 ```
+
+> Остановить бесконечный цикл можно по `Ctrl+C`
 
 ## Функции
 
