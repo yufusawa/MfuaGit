@@ -1,5 +1,7 @@
 ## Git. Основы
 
+![Linus](/content/img/linus-torvalds-about-nvidia-june-2012.jpg)
+
 ### Зачем нужен Git?
 
 #### Почему не флешка?
@@ -105,6 +107,11 @@ git status
 
 ```shell
 git status
+```
+
+Показать состояние удалённого (от слова "далеко") репозитория
+```shell
+git remote show origin
 ```
 
 Показать сравнение изменения файлов до и после (до `git add`)

@@ -231,6 +231,12 @@ chmod +x myscript.sh
 bash myscript.sh
 ```
 
+или
+
+```shell
+sh myscript.sh
+```
+
 ## Примеры простых скриптов
 
 ### 1. Скрипт-приветствие
@@ -262,7 +268,6 @@ fi
 
 ```bash
 #!/bin/bash
-
 echo "Введите первое число:"
 read num1
 echo "Введите второе число:"
