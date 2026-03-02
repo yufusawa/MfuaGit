@@ -50,9 +50,10 @@ apk update && apk upgrade
 ```shell
 apk add fastfetch
 ```
+![text](../img/image7.png)
 
 Запустить приложение
 ```shell
 fastfetch
 ```
-![text](../img/image7.png)
+![text](../img/image8.png)
