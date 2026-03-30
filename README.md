@@ -7,12 +7,14 @@
 - [Markdown](/content/Markdown.md)
 - [Mermaid](/content/Mermaid/README.md)
 - [Docker](/content/Docker/README.md)
+- [DevOps](/content/DevOps/README.md)
 - [Практические задания](/content/StudentPracticalsLabs/README.md)
-- [Инструментальные средства разработки ПО](/content/SoftwareDevelopmentTools/README.md)
-- [Информационные технологии](/content/IT/README.md)
-- [Основы проектирования баз данных](/content/Basics_database_design/README.md)
-- [Обеспечение качества функционирования компьютерных систем](/content/Ensuring_quality_computer_systems_functioning/README.md)
-- [Поддержка и тестирование программных модулей](/content/SupportAndTesting_of_software_modules/)
+- Предметы:
+    - [Инструментальные средства разработки ПО](/content/SoftwareDevelopmentTools/README.md)
+    - [Информационные технологии](/content/IT/README.md)
+    - [Основы проектирования баз данных](/content/Basics_database_design/README.md)
+    - [Обеспечение качества функционирования компьютерных систем](/content/Ensuring_quality_computer_systems_functioning/README.md)
+    - [Поддержка и тестирование программных модулей](/content/SupportAndTesting_of_software_modules/)
 
 ---
 
@@ -21,9 +23,9 @@
 ## Навигация по документу
 
 - [Git](#git)
-- [WSL 2.0 для Windows 10/11](#wsl-20-для-windows-10-для-работы-с-бд)
-- [Docker](#docker)
-- [Virtual Box (Для организации контроллера домена)](#virtual-box-для-организации-контроллера-домена)
+- [WSL 2.0 для Windows 10/11](#wsl-20-для-windows-1011-может-понадобиться-для-работы-с-docker-etc)
+- [Docker](#docker-разработка-тестирование-и-запуск-различного-по)
+- [Virtual Box (Для организации контроллера домена)](/content/Linux/README.md)
 - [Минимальные настройки VSCode](#минимальные-настройки-vscode)
 - [Рекомендуемые навыки и умения](#рекомендуемые-навыки-и-умения)
 - [Вопросы к экзамену](#вопросы-к-экзамену)
@@ -83,7 +85,6 @@ git config --global user.email "rosa@mail.ru"
 
 ### [Подробней о Git >>>](/content/Git/README.md)
 
-
 ---
 
 ### WSL 2.0 для Windows 10/11 (может понадобиться для работы с Docker etc.)
@@ -102,7 +103,7 @@ git config --global user.email "rosa@mail.ru"
     - Запустить **Windows PowerShell** (Администратор)
     - Проверка подсистемы **WSL 2.0** командой `wsl --version` и `wsl --status`
     - Обновить **WSL 2.0** командой `wsl --update`
-    - (Не обязательно!) Установить **Ubuntu** `wsl --install`
+    - Установить **Ubuntu** `wsl --install`
         - Когда система предложит указать имя пользователя **UNIX**, надо указать `user` и **Enter**
         - Пароль польователя `user` - `123` (при наборе пароля он никак не отображается, но всё равно набирается) и **Enter**. Повтори пароль и **Enter**
         - Перезагрузить компьютер
@@ -153,7 +154,7 @@ git config --global user.email "rosa@mail.ru"
     - **Settings** -> **Zoom** -> **Mouse Wheel Zoom**
 - Отключить Миникарту в редакторе
     - **Settings** -> **Editor** -› **Minimap:**
-- Велючить предложения в интегрированном терминале VSCdoe **Settings** -> `terminal.integrated.suggest.enabled`
+- Велючить предложения в интегрированном терминале **VSCode** -> `Settings` -> `terminal.integrated.suggest.enabled`
 
 Установка расширений
 
@@ -164,7 +165,7 @@ git config --global user.email "rosa@mail.ru"
 - [Находим нужное вам расширение на https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/)
 - Скачиваем нужные расширения в отдельную папку и устанавливаем их через `Install From VSIX` в `Extensions` редактора **VS Code**
 
-![VSCOD](/content/img/VSCODE_ext.jpg)
+![VS Code](/content/img/VSCODE_ext.jpg)
 
 - LiveServer (**FiveServer**) - превью локального сайта
     - [LiveServer(FiveServer)](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
@@ -176,9 +177,10 @@ git config --global user.email "rosa@mail.ru"
 - [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
   **Markdown Syntax Highlighting** - подсветка синтаксиса в **Mermaid**
 - [Mermaid Markdown Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting)
+- [XML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
 - [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 
-Открыть и закрыть встроенный в **VS Code** терминал по **Ctrl+~**
+Открыть и закрыть интегрированный терминал **VS Code** по команде **Ctrl+~**
 
 [Подробней о настройках VSCode](https://gitflic.ru/project/rurewa/education/blob?file=content/Programming/VCode.md&branch=master&mode=markdown)
 
