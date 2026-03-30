@@ -28,7 +28,7 @@
 - [Virtual Box (Для организации контроллера домена)](/content/Linux/README.md)
 - [Минимальные настройки VSCode](#минимальные-настройки-vscode)
 - [Рекомендуемые навыки и умения](#рекомендуемые-навыки-и-умения)
-- [Вопросы к экзамену](#вопросы-к-экзамену)
+- [Вопросы к экзаменам](#вопросы-к-экзамену)
 
 **Минимальные требования к студентам:**
 
@@ -38,15 +38,14 @@
 1. Для пользователей **Windows 10/11** установку приложений в Windows рекомендуется использовать [**WinGet**](https://learn.microsoft.com/ru-ru/windows/package-manager/winget/)! Проверить у себя в **PowerShell** установленный **WinGet** командой `winget --info`. Если не установлен, то:
     - Установить [WinGet (Windows Package Manager)](https://apps.microsoft.com/detail/9nblggh4nns1?hl=ru-RU&gl=RU) или [с Github](https://github.com/microsoft/winget-cli/releases)
 1. Приложение [Teams](https://teams.microsoft.com/v2/) или браузер [Edge](https://www.microsoft.com/ru-ru/edge/download?form=MA13FW) или в **PowerShell** - `winget install Microsoft.Teams` и `winget install Microsoft.Edge`
-1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/) или в **PowerShell** - `winget install Git.Git`
+1. **Git** (Git-Bash) [Git-Bash](https://git-scm.com/) или установить в **PowerShell** командой `winget install Git.Git`
 1. Регистрация в [Яндекс](https://ya.ru/) или [VK](https://vk.com/)
-1. Сервис [gitflic.ru](gitflic.ru) и [Github](github.com)
-1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru)
+1. Создать публичный репозиторий на [gitflic.ru](gitflic.ru) или [Github](github.com)
 1. **Dia** [Dia](https://ru.wikipedia.org/wiki/Dia) - `winget install gnome.Dia` (не обязательно)
 1. **VSCode** [VSCode](https://code.visualstudio.com/) или в **PowerShell** - `winget install Microsoft.VisualStudioCode`
-1. **Termux** (для Андроид) [Termux](https://termux.dev/en/)
+1. **Termux** (для Андроид) [Termux](https://termux.dev/en/) - не обязательно
 1. Компилятор **gcc** (Для Windows MSYS2) [MSYS2](https://www.msys2.org/) или [Clang](https://releases.llvm.org/download.html)  или в **PowerShell** - `winget install LLVM.LLVM` - не обязательно!
-1. **WSL 2.0** - установить Ubuntu - для **Docker** etc. [WSL 2.0 для Windows 10/11](#wsl-20-для-windows-10-для-работы-с-бд)
+1. **WSL 2.0** - установить Ubuntu - для **Docker** etc. [WSL 2.0 для Windows 10/11](#wsl-20-для-windows-1011-может-понадобиться-для-работы-с-docker-etc)
 1. **Docker** - [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/) или в **PowerShell** - `winget install Docker.DockerDesktop`
 1. **Virtual Box** - для установки **Alt Образование 11** - для контроллера домена (групповые политики) - пока не обязательно!
 [Virtual Box](https://www.oracle.com/virtualization/virtualbox/) или в **PowerShell** - `winget install --id=Oracle.VirtualBox -e`
@@ -58,7 +57,7 @@
 Кроме этого, с помощью **WinGet** можно одновременно устанавливать сразу несколько выбранных приложений, например:
 
 ```shell
-winget install Microsoft.Teams Git.Git Microsoft.VisualStudioCode Docker.DockerDesktop LLVM.LLVM
+winget install Microsoft.Teams Git.Git Microsoft.VisualStudioCode Docker.DockerDesktop LLVM.LLVM gnome.Dia
 ```
 
 ---
@@ -190,7 +189,7 @@ git config --global user.email "rosa@mail.ru"
 
 1. "Слепая печать" на стандартной клавиатуре
     - [Онлайн-клавиатурный тренажер](https://stamina-online.com/ru/)
-1. Эффективная работа с текстом (важные клавиатурные сокращения)
+1. Эффективная работа с текстом (важные клавиатурные сокращения для редактирование)
 1. Технический английский [Золотой плейлист А. Бербис](https://vkvideo.ru/playlist/-227037029_21?ysclid=mictnz3gl4831947556)
 1. Читать тематические группы в Телеграм
 1. Git+Markdown+Mermaid+Docker+CI/CD

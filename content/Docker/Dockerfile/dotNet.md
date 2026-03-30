@@ -16,7 +16,7 @@ MyApp/
 
 В каталоге для Docker-проектов создать одной bash-командой всю структуру для нового приложения:
 ```shell
-mkdir -p MyApp && touch MyApp/Program.cs MyApp/ReservationSystem.csproj MyApp/Dockerfile
+mkdir -p MyApp && touch MyApp/Program.cs MyApp/MyApp.csproj MyApp/Dockerfile
 ```
 
 ### 2. Содержимое файла `MyApp.csproj`
